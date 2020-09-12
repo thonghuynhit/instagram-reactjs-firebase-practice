@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  height: 100%;
+  background-color: #fafafa;
+}
+.app_headerImg {
+  object-fit: contain;
+}
+.app_header >  .app__loginContainer {
+
+}
+
+.app_header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.app_headerImg {
+  width: 100px;
+}
+.app_signup > center {
+  display: flex;
+  flex-direction: column;
+}
+.app_signup > center > * {
+  margin: 5px;
+
+}
+.app_signup img {
+  margin: 0 auto
+}
+.app__posts {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: #fafafa;
+  z-index: 1;
+}
+.app__posts > .app__postsLeft {
+  margin-right: 10px; 
+}
+@media only screen and (max-width: 800px) {
+  .app__posts > .app__postsLeft {
+    margin-right: 0; 
+  }
+}
+@media only screen and (max-width: 555px) {
+  .app__posts {
+    padding: 0;
+  }
+  .makeStyles {
+    width: 95% !important;
+  }
+}
+@media only screen and (max-width: 973px) {
+  .app__postsRight > * {
+    display: none;
+  }
+  .app__posts {
+    padding: 0;
+  }
+}

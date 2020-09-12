@@ -1,0 +1,17 @@
+.imageUpload {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.imageUpload > * {
+    margin: 2px;
+}
+.imageUpload > textarea {
+    height: 80px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.imageUpload > progress {
+    width: 100%;
+}
